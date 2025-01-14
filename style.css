@@ -322,11 +322,11 @@ html body{
         margin: 0 auto;
     }
     .experience-flow__image {
-        width: 375px;
-        height: 375px;
+        width: 98%;
+        height: 350px;
     }
     .experience-flow__image img {
-        width: 375px;
-        height: 375px;
+        width: 100%;
+        height: 350px;
     }
 }
