@@ -16,6 +16,7 @@ html body{
     width: 98%;
     border: solid 3px #f1f1f1;
     border-radius: 20px;
+    height: 70px;
 }
 
 .header-logo {
