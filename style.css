@@ -286,11 +286,10 @@ html body{
 .technology-stack__title {
     font-size: 36px;
     font-weight: bold;
-    margin: 0;
 }
 
 .architecture__content img {
-    width: 100%;
+    width: 90%;
     object-fit: contain;
 }
 
@@ -308,6 +307,7 @@ html body{
     max-width: 100%;
     object-fit: contain;
 }
+
 @media screen and (max-width: 768px) {
     .hero-section__card {
         width: 280px;
@@ -367,5 +367,8 @@ html body{
     }
     .technology-stack__inner {
         margin-left: 0;
+    }
+    .architecture__content img {
+        width: 100%;
     }
 }
