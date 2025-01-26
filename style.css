@@ -86,7 +86,6 @@ html body{
     display: flex;
     flex-direction: column;
     max-width: 700px;
-    margin-left: 100px;
 }
 
 .hero-section__title {
