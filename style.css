@@ -13,7 +13,7 @@ html body{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;  /* horizontally center */
-  }  
+}  
 
 .header {
     display: flex;
@@ -389,6 +389,9 @@ html body{
         margin-left: 0;
     }
     .architecture__content img {
+        width: 100%;
+    }
+    .container {
         width: 100%;
     }
 }
