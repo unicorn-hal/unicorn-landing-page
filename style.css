@@ -9,6 +9,12 @@ html body{
     overflow-x: hidden;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;  /* horizontally center */
+  }  
+
 .header {
     display: flex;
     flex-direction: space-between;
@@ -164,7 +170,6 @@ html body{
     font-size: 36px;
     font-weight: bold;
     margin: 50px 0;
-    margin-left: 50px;
 }
 
 .feature-list {
@@ -178,7 +183,7 @@ html body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    width: 546px;
+    width: 513px;
     padding: 20px;
     margin: 10px;
 }
@@ -231,10 +236,7 @@ html body{
     color: #566375;
     margin: 20px 0;
 }
-.experience-flow__inner {
-    margin-left: 100px;
 
-}
 .experience-flow__step {
     display: flex;
     flex-direction: row;
@@ -258,7 +260,8 @@ html body{
 
 .experience-flow__image img {
     width: 500px;
-    height: 500px;
+    height: auto;
+    object-fit: contain;
 }
 
 .experience-flow__step__title {
@@ -266,32 +269,53 @@ html body{
     color: #566375;
 }
 
-.technology-stack__content__title {
-    font-size: 18px;
-}
-
 .technology-stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
     margin-top: 80px;
-    margin: 0 auto;
-}
-
-.technology-stack__inner {
-    margin-left: 100px;
-}
-
-.technology-stack__title {
+  }
+  
+  .technology-stack__title {
     font-size: 36px;
     font-weight: bold;
-}
-
-.architecture__content img {
-    width: 90%;
+    margin-bottom: 50px;
+  }
+  
+  .technology-stack__content {
+    margin-bottom: 40px;
+  }
+  
+  .technology-stack__content__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .technology-stack__icons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #d9d9d9;
+  }
+  
+  .technology-stack__icons img {
     object-fit: contain;
-}
+  }
+  
+  .technology-stack__content img {
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .technology-stack__link a {
+    color: #38ADFD;
+    text-decoration: none;
+  }
+  
+  .technology-stack__link a:hover {
+    text-decoration: underline;
+  }
 
 .footer {
     margin-top: 20px;
@@ -301,11 +325,27 @@ html body{
     padding: 20px;
 }
 
-.technology-stack__content img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
+
+@media screen and (max-width: 1024px) {
+    .experience-flow {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .experience-flow__inner {
+        margin-left: 10px;
+    }
+    .experience-flow__image {
+        margin: 0 auto;
+    }
+    .experience-flow__image {
+        width: 98%;
+        height: auto;
+    }
+    .experience-flow__image img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -345,25 +385,6 @@ html body{
     }
     .feature-title {
         margin-left: 10px;
-    }
-    .experience-flow {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 30px;
-    }
-    .experience-flow__inner {
-        margin-left: 20px;
-    }
-    .experience-flow__image {
-        margin: 0 auto;
-    }
-    .experience-flow__image {
-        width: 98%;
-        height: 350px;
-    }
-    .experience-flow__image img {
-        width: 100%;
-        height: 350px;
     }
     .technology-stack__inner {
         margin-left: 0;
